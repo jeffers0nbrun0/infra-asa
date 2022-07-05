@@ -1,0 +1,20 @@
+
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+//zone "asa1.com" {
+//	type master;
+//	file "/etc/bind/db.asa1.com";
+//};
+zone "asa.dns.br" {
+type master;
+file "/etc/bind/db.asa";
+};
+zone ""2..25.10".in-addr.arpa" {
+type master;
+file "/etc/bind/reverse.asa.br";
+};

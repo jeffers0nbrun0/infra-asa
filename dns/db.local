@@ -1,0 +1,20 @@
+ lines (17 sloc)  395 Bytes
+
+;
+; BIND data file for local loopback interface
+;
+$TTL	604800
+@	IN	SOA	asa.dns.br. root.asa.br. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	asa.dns.br.
+@	IN	NS	asa1.dns.br.
+@	IN	A	127.0.0.1
+@	IN	AAAA	::1
+
+asa		     	A   "10.25.2.99"		; config do primario
+asa1			A	"10.25.2.99"		; config do secuncario
