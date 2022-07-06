@@ -14,7 +14,7 @@ zone "asa.dns.br" {
 type master;
 file "/etc/bind/db.asa";
 };
-zone ""2..25.10".in-addr.arpa" {
+zone ""2.25.10".in-addr.arpa" {
 type master;
 file "/etc/bind/reverse.asa.br";
 };
