@@ -22,8 +22,8 @@ options {
 
 	//listen-on-v6 { any; };
 listen-on-v6 {none; };
-listen-on port 53 {localhost; "ip da rede"/24; }; 
-allow-query {localhost; "ip da rede"/24; };
+listen-on port 53 {localhost; 10.25.2.0/24; }; 
+allow-query {localhost; 10.25.2.0/24; };
 forwarders { 8.8.8.8; };
 recursion yes;
 };
