@@ -9,9 +9,9 @@ $TTL	604800
 			2419200		; Expire
 			 604800 )	; Negative Cache TTL
 ;
-@	IN	NS	asa.dns.br.
-@	IN	NS	asa1.dns.br.
+@	IN	NS	s1.prova.asa.br.
+@	IN	NS	s2.prova.asa.br.
 @	IN	A	127.0.0.1
 @	IN	AAAA	::1
 
-asa	IN	A	"10.25.2.99" ; apontamento de dominio para ipv4
+asa	IN	A	10.25.2.99 ; apontamento de dominio para ipv4
